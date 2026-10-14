@@ -1,0 +1,25 @@
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[package]
+disabled = true
+
+[git_branch]
+symbol = ""
+style = "bold purple"
+
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+style = "bold yellow"
+conflicted = '[=$count](bold red) '
+staged = '[+$count](bold green) '
+modified = '[~$count](bold yellow) '
+deleted = '[-$count](bold red) '
+renamed = '[»$count](bold blue) '
+untracked = '[?$count](bold cyan) '
+stashed = '[\$$count](bold white) '
+ahead = '[⇡$count](green)'
+behind = '[⇣$count](red)'
+diverged = '[⇕⇡${ahead_count}⇣${behind_count}](bold red)'
+up_to_date = '[✓](green)'
