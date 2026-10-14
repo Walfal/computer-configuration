@@ -1,7 +1,8 @@
 {
 	"editor.cursorBlinking": "expand",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.fontFamily": "'Fira Code'",
-	"editor.fontLigatures": true,
+	"editor.fontLigatures": "'ss01', 'cv14', 'ss04', 'cv18', 'cv31', cv29', 'cv30', 'cv21', 'cv25', 'cv28', 'cv32', 'cv27', 'ss10', 'zero', 'onum'",
 	"editor.fontSize": 18,
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
@@ -12,62 +13,62 @@
 		["[", "]"],
 		["(", ")"],
 		["{", "}"],
-		[" <", ">\n"],
+		[" <", ">\n"]
 	],
 	"editor.tabCompletion": "on",
 	"editor.tokenColorCustomizations": {
-		"comments": "#888",
+		"comments": "#888", //"#57f",
 		"strings": "#0f0",
 		"keywords": "#c0C",
 		"types": "#f84",
 		"variables": "#aff",
-		"functions": "#fff",
+		"functions": "#fff", // "#0ff",
 		"numbers": "#ff0",
 		"textMateRules": [
 			{
 				"scope": ["keyword.operator", "punctuation"],
 				"settings": {
-					"foreground": "#f00",
-				},
+					"foreground": "#f00"
+				}
 			},
 			{
 				"scope": "variable.other.property",
 				"settings": {
-					"foreground": "#0ff",
-				},
+					"foreground": "#0ff" // "#ccc"
+				}
 			},
 			{
 				"scope": "variable.parameter",
 				"settings": {
-					"foreground": "#fc7",
-				},
+					"foreground": "#fc7"
+				}
 			},
 			{
 				"scope": "variable.other.enummember",
 				"settings": {
-					"fontStyle": "italic",
-				},
+					"fontStyle": "italic"
+				}
 			},
 			{
 				"scope": ["entity.name.function.preprocessor"],
 				"settings": {
-					"foreground": "#ccc",
-				},
+					"foreground": "#ccc"
+				}
 			},
 			{
 				"scope": ["keyword"],
 				"settings": {
-					"foreground": "#c0c",
-				},
+					"foreground": "#c0c"
+				}
 			},
 			{
 				"scope": "markup.underline.link",
 				"settings": {
 					"foreground": "#ff0000",
-					"fontStyle": "underline",
-				},
-			},
-		],
+					"fontStyle": "underline"
+				}
+			}
+		]
 	},
 	"editor.unicodeHighlight.nonBasicASCII": false,
 	"emmet.showSuggestionsAsSnippets": true,
@@ -82,9 +83,8 @@
 		"rgba( 64, 255,   0, .25)",
 		"rgba(255, 255,   0, .25)",
 		"rgba(255,  64,   0, .25)",
-		"rgba(255,   0, 128, .25)",
+		"rgba(255,   0, 128, .25)"
 	],
-	"javascript.updateImportsOnFileMove.enabled": "always",
 	"rust-analyzer.check.command": "clippy",
 	"rust-analyzer.hover.actions.references.enable": true,
 	"rust-analyzer.rustfmt.rangeFormatting.enable": true,
@@ -102,7 +102,7 @@
 		"editorBracketHighlight.foreground6": "#f40",
 		"editorBracketHighlight.foreground7": "#f08",
 		"editorBracketHighlight.unexpectedBracket.foreground": "#f00",
-		"editor.foldBackground": "#2228",
+		"editor.foldBackground": "#2228"
 	},
 	"workbench.editor.tabSizing": "shrink",
 	"workbench.sideBar.location": "right",
@@ -117,54 +117,56 @@
 	"testing.coverageBarThresholds": {
 		"red": 0,
 		"yellow": 60,
-		"green": 90,
+		"green": 90
 	},
 	"terminal.external.osxExec": "Warp.app",
 	"chat.editor.fontSize": 16,
 	"cSpell.customDictionaries": {
 		"project-words": {
 			"name": "project-words",
-			"path": "~/dev-win/project-words-spell-checker.txt",
-			"description": "Words used in this praoject",
-			"addWords": true,
+			"path": "~/dev/project-words-spell-checker.txt",
+			"description": "Words used in this project",
+			"addWords": true
 		},
 		"custom": true, // Enable the `custom` dictionary
-		"internal-terms": false, // Disable the `internal-terms` dictionary
+		"internal-terms": false // Disable the `internal-terms` dictionary
 	},
 	"cSpell.flagWords": ["center->centre"],
 	"cSpell.overrides": [
 		{
 			"filename": "**/fr.json",
-			"language": "en, fr",
-		},
+			"language": "en, fr"
+		}
 	],
+	"codeium.enableConfig": {
+		"*": true,
+		"markdown": true,
+		"lldb.disassembly": true,
+		"plaintext": true,
+		"properties": true
+	},
 	"[json]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
-		"editor.tabSize": 2,
+		"editor.tabSize": 2
 	},
 	"[markdown]": {
-		"editor.formatOnSave": false,
+		"editor.formatOnSave": false
 	},
 	"[rust]": {
 		"editor.defaultFormatter": "rust-lang.rust-analyzer",
 		"editor.formatOnSave": true,
-		"editor.autoClosingComments": "never",
+		"editor.autoClosingComments": "never"
 	},
-	"[csharp]": {
-		"editor.defaultFormatter": "csharpier.csharpier-vscode",
-		"editor.formatOnSave": true,
+	"[sql]": {
+		"editor.defaultFormatter": "sqlfluff.vscode-sqlfluff"
 	},
+	"security.workspace.trust.untrustedFiles": "open",
 	"plantuml.render": "PlantUMLServer",
 	"plantuml.server": "https://www.plantuml.com/plantuml",
 	"git.openRepositoryInParentFolders": "always",
 	"editor.minimap.showSlider": "always",
 	"explorer.confirmPasteNative": false,
+	"codeium.enableCodeLens": false,
 	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "catppuccin-latte",
-	"mssql.connectionGroups": [
-		{
-			"name": "ROOT",
-			"id": "ROOT",
-		},
-	],
+	"workbench.iconTheme": "catppuccin-latte"
 }
