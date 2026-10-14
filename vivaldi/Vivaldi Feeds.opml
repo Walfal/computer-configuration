@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="1.0">
+<head>
+<title>Vivaldi Feed Reader Export</title>
+<dateCreated>Wed, 14 Oct 2026 10:16:59 GMT</dateCreated>
+</head>
+<body>
+<outline type="rss" text="LostInBrittany.dev (English)" title="LostInBrittany.dev (English)" xmlUrl="https://lostinbrittany.dev/en/feed.xml"/>
+<outline text="Trash" title="Trash"/>
+<outline type="rss" text="This Week in Rust" title="This Week in Rust" xmlUrl="https://this-week-in-rust.org/rss.xml"/>
+<outline type="rss" text="Sylvain Kerkour" title="Sylvain Kerkour" xmlUrl="https://kerkour.com/feed.xml"/>
+</body>
+</opml>
