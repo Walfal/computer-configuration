@@ -346,9 +346,5 @@
 	{
 		"key": "ctrl+shift+[KeyZ]",
 		"command": "workbench.files.action.collapseExplorerFolders"
-	},
-	{
-		"key": "ctrl+alt+n",
-		"command": "csdevkit.debug.noDebugFileLaunch"
 	}
 ]
