@@ -1,0 +1,170 @@
+{
+	"editor.cursorBlinking": "expand",
+	"editor.fontFamily": "'Fira Code'",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 18,
+	"editor.formatOnSave": true,
+	"editor.guides.bracketPairs": true,
+	"editor.guides.bracketPairsHorizontal": true,
+	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.inlineSuggest.enabled": true,
+	"editor.language.colorizedBracketPairs": [
+		["[", "]"],
+		["(", ")"],
+		["{", "}"],
+		[" <", ">\n"],
+	],
+	"editor.tabCompletion": "on",
+	"editor.tokenColorCustomizations": {
+		"comments": "#888",
+		"strings": "#0f0",
+		"keywords": "#c0C",
+		"types": "#f84",
+		"variables": "#aff",
+		"functions": "#fff",
+		"numbers": "#ff0",
+		"textMateRules": [
+			{
+				"scope": ["keyword.operator", "punctuation"],
+				"settings": {
+					"foreground": "#f00",
+				},
+			},
+			{
+				"scope": "variable.other.property",
+				"settings": {
+					"foreground": "#0ff",
+				},
+			},
+			{
+				"scope": "variable.parameter",
+				"settings": {
+					"foreground": "#fc7",
+				},
+			},
+			{
+				"scope": "variable.other.enummember",
+				"settings": {
+					"fontStyle": "italic",
+				},
+			},
+			{
+				"scope": ["entity.name.function.preprocessor"],
+				"settings": {
+					"foreground": "#ccc",
+				},
+			},
+			{
+				"scope": ["keyword"],
+				"settings": {
+					"foreground": "#c0c",
+				},
+			},
+			{
+				"scope": "markup.underline.link",
+				"settings": {
+					"foreground": "#ff0000",
+					"fontStyle": "underline",
+				},
+			},
+		],
+	},
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.triggerExpansionOnTab": true,
+	"files.autoSave": "onFocusChange",
+	"files.trimTrailingWhitespace": true,
+	"indentRainbow.colors": [
+		"rgba(192,   0, 255, .25)",
+		"rgba( 11,  33, 255, .25)",
+		"rgba(  0, 192, 255, .25)",
+		"rgba(  0, 255, 128, .25)",
+		"rgba( 64, 255,   0, .25)",
+		"rgba(255, 255,   0, .25)",
+		"rgba(255,  64,   0, .25)",
+		"rgba(255,   0, 128, .25)",
+	],
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"rust-analyzer.check.command": "clippy",
+	"rust-analyzer.hover.actions.references.enable": true,
+	"rust-analyzer.rustfmt.rangeFormatting.enable": true,
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"prettier.withNodeModules": true,
+	"prettier.bracketSpacing": false,
+	"workbench.colorCustomizations": {
+		"editor.background": "#111",
+		"editorBracketHighlight.foreground1": "#c0f",
+		"editorBracketHighlight.foreground2": "#13f",
+		"editorBracketHighlight.foreground3": "#0cf",
+		"editorBracketHighlight.foreground4": "#0f8",
+		"editorBracketHighlight.foreground5": "#ff0",
+		"editorBracketHighlight.foreground6": "#f40",
+		"editorBracketHighlight.foreground7": "#f08",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#f00",
+		"editor.foldBackground": "#2228",
+	},
+	"workbench.editor.tabSizing": "shrink",
+	"workbench.sideBar.location": "right",
+	"diffEditor.codeLens": true,
+	"workbench.commandPalette.experimental.suggestCommands": true,
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"window.density.editorTabHeight": "compact",
+	"window.menuBarVisibility": "toggle",
+	"window.newWindowDimensions": "maximized",
+	"explorer.fileNesting.enabled": true,
+	"search.smartCase": true,
+	"testing.coverageBarThresholds": {
+		"red": 0,
+		"yellow": 60,
+		"green": 90,
+	},
+	"terminal.external.osxExec": "Warp.app",
+	"chat.editor.fontSize": 16,
+	"cSpell.customDictionaries": {
+		"project-words": {
+			"name": "project-words",
+			"path": "~/dev-win/project-words-spell-checker.txt",
+			"description": "Words used in this praoject",
+			"addWords": true,
+		},
+		"custom": true, // Enable the `custom` dictionary
+		"internal-terms": false, // Disable the `internal-terms` dictionary
+	},
+	"cSpell.flagWords": ["center->centre"],
+	"cSpell.overrides": [
+		{
+			"filename": "**/fr.json",
+			"language": "en, fr",
+		},
+	],
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.tabSize": 2,
+	},
+	"[markdown]": {
+		"editor.formatOnSave": false,
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer",
+		"editor.formatOnSave": true,
+		"editor.autoClosingComments": "never",
+	},
+	"[csharp]": {
+		"editor.defaultFormatter": "csharpier.csharpier-vscode",
+		"editor.formatOnSave": true,
+	},
+	"plantuml.render": "PlantUMLServer",
+	"plantuml.server": "https://www.plantuml.com/plantuml",
+	"git.openRepositoryInParentFolders": "always",
+	"editor.minimap.showSlider": "always",
+	"explorer.confirmPasteNative": false,
+	"workbench.editor.enablePreview": false,
+	"workbench.iconTheme": "catppuccin-latte",
+	"mssql.connectionGroups": [
+		{
+			"name": "ROOT",
+			"id": "ROOT",
+		},
+	],
+}
