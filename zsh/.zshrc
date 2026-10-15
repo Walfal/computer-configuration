@@ -21,6 +21,7 @@ plugins=(
   zsh-syntax-highlighting
 )
 
+DISABLE_AUTO_TITLE="true"   # let __wt_set_title (below) own the tab title
 source "$ZSH/oh-my-zsh.sh"
 eval "$(starship init zsh)"
 eval "$(/home/raph/.local/bin/mise activate zsh)"
@@ -35,3 +36,11 @@ fi
 source "$ZSH_CONF/aliases.zsh"
 source "$ZSH_CONF/functions.zsh"
 
+# Windows Terminal tab title
+__wt_set_title() {
+  local name=${PWD:t}                  # dernier segment du chemin
+  [[ -z $name ]] && name=$PWD          # cas de la racine "/"
+  printf '\e]0;%s\a' "$name"
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd __wt_set_title

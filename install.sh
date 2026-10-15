@@ -71,6 +71,19 @@ else
   echo "    not on WSL, skipped"
 fi
 
+echo "==> windows terminal (copied, so the repo holds the real file)"
+if have cmd.exe && have wslpath; then
+  WIN_LOCALAPPDATA="$(wslpath -u "$(cmd.exe /c 'echo %LOCALAPPDATA%' 2>/dev/null | tr -d '\r')")"
+  WT_DIR="$WIN_LOCALAPPDATA/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
+  if [ -d "$WT_DIR" ]; then
+    cp "$REPO/windows/terminal/settings.json" "$WT_DIR/settings.json"
+  else
+    echo "    Windows Terminal not found, skipped (launch it once first)"
+  fi
+else
+  echo "    not on WSL, skipped"
+fi
+
 echo "==> default shell"
 [ "$(basename "$SHELL")" = "zsh" ] || chsh -s "$(command -v zsh)"
 
