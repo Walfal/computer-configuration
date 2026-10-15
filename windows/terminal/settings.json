@@ -1,0 +1,90 @@
+{
+	"$help": "https://aka.ms/terminal-documentation",
+	"$schema": "https://aka.ms/terminal-profiles-schema",
+	"actions": [
+		{
+			"command": {
+				"action": "sendInput",
+				"input": "\u001b[13;2u"
+			},
+			"id": "User.sendInput.ShiftEnter"
+		}
+	],
+	"copyFormatting": "none",
+	"copyOnSelect": false,
+	"defaultProfile": "{2d4f6ff1-4449-5e1a-b724-d3ac6d61d4ae}",
+	"keybindings": [
+		{
+			"id": "Terminal.CopyToClipboard",
+			"keys": "ctrl+c"
+		},
+		{
+			"id": "Terminal.PasteFromClipboard",
+			"keys": "ctrl+v"
+		},
+		{
+			"id": "Terminal.DuplicatePaneAuto",
+			"keys": "alt+shift+d"
+		},
+		{
+			"id": "User.sendInput.ShiftEnter",
+			"keys": "shift+enter"
+		},
+		{
+			"id": "Terminal.MoveTabBackward",
+			"keys": "ctrl+shift+pgup"
+		},
+		{
+			"id": "Terminal.MoveTabForward",
+			"keys": "ctrl+shift+pgdn"
+		}
+	],
+	"newTabMenu": [
+		{
+			"type": "remainingProfiles"
+		}
+	],
+	"newTabPosition": "afterCurrentTab",
+	"profiles": {
+		"defaults": {
+			"altGrAliasing": false,
+			"colorScheme": "IBM 5153",
+			"font": {
+				"face": "MesloLGS Nerd Font Mono"
+			},
+			"opacity": 85,
+			"startingDirectory": "%USERPROFILE%"
+		},
+		"list": [
+			{
+				"guid": "{2d4f6ff1-4449-5e1a-b724-d3ac6d61d4ae}",
+				"hidden": false,
+				"name": "Ubuntu",
+				"source": "Microsoft.WSL",
+				"startingDirectory": "~/dev",
+				"suppressApplicationTitle": false
+			},
+			{
+				"commandline": "C:\\Users\\x2034603\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+				"guid": "{a480270d-b4cd-498f-86ea-344d4a81e05b}",
+				"hidden": false,
+				"icon": "C:\\Users\\x2034603\\AppData\\Local\\Programs\\Git\\git-bash.exe",
+				"name": "git bash"
+			},
+			{
+				"commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+				"hidden": false,
+				"name": "Windows PowerShell"
+			},
+			{
+				"commandline": "%SystemRoot%\\System32\\cmd.exe",
+				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+				"hidden": false,
+				"name": "Invite de commandes"
+			}
+		]
+	},
+	"schemes": [],
+	"themes": []
+}
